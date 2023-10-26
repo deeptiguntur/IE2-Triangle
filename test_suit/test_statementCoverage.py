@@ -25,11 +25,11 @@ class TriangleTest(unittest.TestCase):
         actual = Triangle.classify(10, 11, 12)
         expected = Triangle.Type.SCALENE
         self.assertEqual(actual, expected)
-    def test5(self):
+    def test6(self):
         actual = Triangle.classify(-1, 0, 1)
         expected = Triangle.Type.INVALID
         self.assertEqual(actual, expected)
-    def test6(self):
+    def test7(self):
         actual = Triangle.classify(4, 30, 100)
         expected = Triangle.Type.INVALID
         self.assertEqual(actual, expected)
