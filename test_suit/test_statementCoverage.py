@@ -10,15 +10,15 @@ class TriangleTest(unittest.TestCase):
         expected = Triangle.Type.EQUILATERAL
         self.assertEqual(actual, expected)
     def test2(self):
-        actual = Triangle.classify(5, 10, 10)
+        actual = Triangle.classify(7, 10, 10)
         expected = Triangle.Type.ISOSCELES
         self.assertEqual(actual, expected)
     def test3(self):
-        actual = Triangle.classify(10, 10, 5)
+        actual = Triangle.classify(10, 10, 7)
         expected = Triangle.Type.ISOSCELES
         self.assertEqual(actual, expected)
     def test4(self):
-        actual = Triangle.classify(10, 5, 10)
+        actual = Triangle.classify(10, 7, 10)
         expected = Triangle.Type.ISOSCELES
         self.assertEqual(actual, expected)
     def test5(self):
