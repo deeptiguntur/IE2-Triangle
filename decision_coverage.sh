@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Change to the directory containing the Python script
 cd "./test_suit"
 coverage run --branch test_decisionCoverage.py
